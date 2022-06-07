@@ -10,7 +10,7 @@ function App() {
      <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<ProductListing/>}></Route>
-        <Route  path="/product/productId" component={<ProductsDetail/>} />
+        <Route  path="/product/:productId" element={<ProductsDetail/>} ></Route>
         <Route >404 not found</Route>
       </Routes>
      </BrowserRouter>
